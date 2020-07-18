@@ -16,6 +16,7 @@ https://www.python.jp/install/windows/install_py3.html
 https://www.cc.uec.ac.jp/ug/ja/account/index.html#uec-account-2fa
 からトークンアプリを利用する→パスワード変更ページ→ログイン→二段階認証→URIのsecret=から&issuer~の間をコピー
 この値をUEC_2FACTOR_PRIVATEKEYとして環境変数に登録してください。
+絶対に予備のためにgoogleのAuthenticatorとかにも登録しといてね。
 
 4.totp.pyを保存して、保存したディレクトリで「python3 totp.py」ってやったらカーソルがあるところにパスワードが自動入力されます。実行してから入力されるまで時間を空けたい人はtimeモジュールでもインポートして自分でやってね。
 https://techplay.jp/column/575
