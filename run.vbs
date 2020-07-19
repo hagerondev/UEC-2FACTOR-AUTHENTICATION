@@ -1,6 +1,6 @@
 Dim o
 Set o = WScript.CreateObject ("WSCript.shell")
-o.run o.CurrentDirectory & "\do.bat",0
+o.run "python totp.py",0,false
 Set o = Nothing
 
 'made by hageron
