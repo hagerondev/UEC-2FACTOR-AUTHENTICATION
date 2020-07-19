@@ -47,4 +47,4 @@ https://techplay.jp/column/575<br>
 →LINEしてくれたら考える（Kさんは２つもらう）<br>
 
 ・Python反応しない！(07/19 22:05)<br>
-→microsoft storeのpythonが開いてる場合があります。「where python３」ってやってpythonの実行可能ファイルが置いてあるところ直に参照してね。<br>
+→microsoft storeのpythonが開いてる場合があります。「where python3」ってやってpythonの実行可能ファイルが置いてあるところ直に参照してね。<br>
