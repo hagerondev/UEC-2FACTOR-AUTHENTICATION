@@ -6,7 +6,7 @@ import pyautogui
 
 environ_name = "UEC_2FACTOR_PRIVATEKEY"
 
-url_help = ""
+url_help = "https://hageron1229.github.io/UEC-2FACTOR-AUTHENTICATION/help/"
 
 if os.environ.get(environ_name)==None:
 	message.warning(f"環境変数「{environ_name}」が設定されていません。\n設定してください。")
