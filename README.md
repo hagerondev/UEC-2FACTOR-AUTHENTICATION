@@ -7,7 +7,7 @@
 windows以外の人は自力で頑張れ
 
 ## [使い方]
-1.[release](https://github.com/hageron1229/UEC-2FACTOR-AUTHENTICATION/releases/tag/v2.0)からAuto Auth hg.exeをインストール<br>
+1.[release](https://github.com/hageron1229/UEC-2FACTOR-AUTHENTICATION/releases/tag/v2.0)からAuto Auth hg.exeをダウンロード&実行<br>
 おわり
 
 ## [その他]
