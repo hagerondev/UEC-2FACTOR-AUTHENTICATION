@@ -1,10 +1,10 @@
 # Version 2.0
 
 ## [説明] 
-キーからTOTPを生成して、入力してくれるやつです。
-モジュール流用しただけだし、電通大生しかみてないんでUEC 2FACTORなんとかって名づけました。
+実行すると二段階認証の数字を自動で入力してくれる。<br>
+めちゃ簡単に使えるようになった
 
-windows以外の人は自力で頑張れ
+windows専用（頑張ればmacでもlinuxでも使える）
 
 ## [使い方]
 1.[release](https://github.com/hageron1229/UEC-2FACTOR-AUTHENTICATION/releases/tag/v2.0)からAuto Auth hg.exeをダウンロード&実行<br>
