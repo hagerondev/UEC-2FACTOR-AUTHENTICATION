@@ -15,4 +15,4 @@ windows専用（頑張ればmacでもlinuxでも使える）
 ## [その他]
 質問はhageronまで<br>
 セキュリティソフトがexeファイルを怪しく見るかもしれないけど許してほしい（hageronで自己署名はした）<br>
-[help](https://hageron1229.github.io/UEC-2FACTOR-AUTHENTICATION/help/)
+[help](https://hagerondev.github.io/UEC-2FACTOR-AUTHENTICATION/)
