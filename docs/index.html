@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto Auth hgの使い方</title>
+	<style type="text/css">
+		.top {
+			text-align: center;
+		}
+		.exp {
+			margin-left: 1em;
+		}
+		img {
+			max-width: 700px;
+			max-height: 500px;
+			border: 1px solid black;
+			margin: 10px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<h1 class="top">Auto Auth hg</h1>
+<h3 class="top">developed by hageron</h3>
+
+<h2>使い方</h2>
+<h3>①．二段階認証に使用する秘密鍵を入手する。</h3>
+<div class="exp">
+	1.大学のパスワード変更ページにアクセスし、ログインする。（<a target="new" href="https://axiole.cc.uec.ac.jp/">https://axiole.cc.uec.ac.jp/</a>)<br>
+	<img src="img/1.PNG">
+	2.現在設定している方法で、二段階認証をする。<br>
+	<img src="img/2.PNG">
+	3.「２段階認証設定」を選択する。<br>
+	<img src="img/3_1.png">
+	4.「トークンアプリを使用する」を選択し<br>
+	URIの、otpauth://totp/axiole:{{学籍番号}}?secret={{秘密鍵}}&issuer=axioleの「秘密鍵」の部分をメモしておく。
+	<img src="img/4_1.png">
+</div>
+<h3>②.バックアップ用の端末を登録する。<span style="color: red; font-size: 1.4em;">必須</span></h3>
+<div class="exp">
+	1.TOTPを生成してくれるアプリケーションをインストールする。<br>
+	ここではMicrosoft Authenticator(<a href="https://apps.apple.com/jp/app/microsoft-authenticator/id983156458">App Store</a>)を例に説明していく。<br>
+	<img src="img/m1_1.png">
+	2.「その他(Google, Facebookなど)」を選択する。<br>
+	<img src="img/m2.jpg">
+	3.①.4で表示されたQRコードを読みこむと、以下の画面に遷移する。<br>
+	※6桁の数字が二段階認証のパスワードである。<br>
+	※以下で紹介するAuto Auth hgを使ってログインできなくなった際に代わりに用いる。<br>
+	<img src="img/m3_1.png">
+</div>
+<h3>③.Auto Auth hgの設定をする。</h3>
+<div class="exp">
+	1.環境変数に「UEC_2FACTOR_PRIVATEKEY」という変数名で、①.4で入手した秘密鍵を設定する。<br><a href="https://www.atmarkit.co.jp/ait/articles/1805/11/news035.html" target="new">※やり方が分からない場合</a><br>
+	2.これでつかえるようになります。
+</div>
+<h3>使い方</h3>
+<div>Auto Auth hg.exeを実行するとカーソルがある所にワンタイムパスワードを入力するので、テキストボックスに合わせてから実行してください。このソフトにショートカットを設定するとめちゃ楽です。<br><a href="https://nikunimame.com/windows-exe-shortcut/">https://nikunimame.com/windows-exe-shortcut/</a></div>
+</body>
+</html>
